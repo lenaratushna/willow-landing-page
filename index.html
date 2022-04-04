@@ -4,6 +4,10 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
 		<link rel="stylesheet" href="./css/style.css" />
 		<title>Willow</title>
 	</head>
@@ -12,8 +16,10 @@
 			<a class="header__logo" href="/">
 				<img src="./images/svg/logo.svg" alt="Willow" />
 			</a>
-            <div class="header__line"></div>
-			<a class="header__mail" href="mailto:hello@willow.com">hello@willow.com</a>
+			<div class="header__line"></div>
+			<a class="header__mail" href="mailto:hello@willow.com"
+				>hello@willow.com</a
+			>
 		</header>
 
 		<div class="start-section">
@@ -31,7 +37,7 @@
 			<div class="start-section__right">
 				<img
 					class="start-section__img"
-					src="./images/start-section.jpg"
+					src="./images/start-section.webp"
 					alt="woman"
 				/>
 				<div class="start-section__customer-counter customer-counter">
@@ -43,67 +49,442 @@
 						<p class="customer-counter__text">Happy Customer</p>
 					</div>
 				</div>
-                <div class="start-section__learn-more learn-more">
-                    <p class="learn-more__text">Start growing with Willow.</p>
-                    <a class="learn-more__link" href="#!">Learn More <img src="./images/svg/arrow.svg" alt="arrow"></a>
-                </div>
+				<div class="start-section__learn-more learn-more">
+					<p class="learn-more__text">Start growing with Willow.</p>
+					<a class="learn-more__link" href="#!"
+						>Learn More <img src="./images/svg/arrow.svg" alt="arrow"
+					/></a>
+				</div>
 			</div>
 		</div>
 
-        <div class="customer">
-            <div class="container">
-                <ul class="customer__list">
-                    <li class="customer__item"><img src="./images/svg/customer-1.svg" alt="customer"></li>
-                    <li class="customer__item"><img src="./images/svg/customer-2.svg" alt="customer"></li>
-                    <li class="customer__item"><img src="./images/svg/customer-3.svg" alt="customer"></li>
-                    <li class="customer__item"><img src="./images/svg/customer-4.svg" alt="customer"></li>
-                    <li class="customer__item"><img src="./images/svg/customer-5.svg" alt="customer"></li>
-                    <li class="customer__item"><img src="./images/svg/customer-6.svg" alt="customer"></li>
-                </ul>
-            </div>
-        </div>
+		<div class="customer">
+			<div class="container">
+				<ul class="customer__list">
+					<li class="customer__item">
+						<img src="./images/svg/customer-1.svg" alt="customer" />
+					</li>
+					<li class="customer__item">
+						<img src="./images/svg/customer-2.svg" alt="customer" />
+					</li>
+					<li class="customer__item">
+						<img src="./images/svg/customer-3.svg" alt="customer" />
+					</li>
+					<li class="customer__item">
+						<img src="./images/svg/customer-4.svg" alt="customer" />
+					</li>
+					<li class="customer__item">
+						<img src="./images/svg/customer-5.svg" alt="customer" />
+					</li>
+					<li class="customer__item">
+						<img src="./images/svg/customer-6.svg" alt="customer" />
+					</li>
+				</ul>
+			</div>
+		</div>
 
-        <div class="services">
-            <div class="container">
-                <h2 class="services__title title">
-                    We create world-class development and branding
-                </h2>
-                <div class="services__decor"><img src="./images/svg/decor.svg" alt="line"></div>
-                <div class="services__wrapper">
-                    <div class="service">
-                        <div class="service__logo">
-                            <img src="./images/svg/branding.svg" alt="Branding">
-                        </div>
-                        <h3 class="service__title">Branding</h3>
-                        <p class="service__text">A brand today is all about how it makes your customers feel.</p>
-                        <a class="service__link" href="#!">Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow">  </a>
-                    </div>
-                    <div class="service">
-                        <div class="service__logo">
-                            <img src="./images/svg/development.svg" alt="Development">
-                        </div>
-                        <h3 class="service__title">Development</h3>
-                        <p class="service__text">A brand today is all about how it makes your customers feel.</p>
-                        <a class="service__link" href="#!">Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow"></a>
-                    </div>
-                    <div class="service">
-                        <div class="service__logo">
-                            <img src="./images/svg/animation.svg" alt="Animation">
-                        </div>
-                        <h3 class="service__title">Animation</h3>
-                        <p class="service__text">A brand today is all about how it makes your customers feel.</p>
-                        <a class="service__link" href="#!">Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow"></a>
-                    </div>
-                    <div class="service">
-                        <div class="service__logo">
-                            <img src="./images/svg/user-experience.svg" alt="User Experience">
-                        </div>
-                        <h3 class="service__title">User Experience</h3>
-                        <p class="service__text">A brand today is all about how it makes your customers feel.</p>
-                        <a class="service__link" href="#!">Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow"></a>
-                    </div>
+		<div class="services">
+			<div class="container">
+				<h2 class="services__title title">
+					We create world-class development and branding
+				</h2>
+				<div class="services__decor">
+					<img src="./images/svg/decor.svg" alt="line" />
+				</div>
+				<div class="services__wrapper">
+					<div class="service">
+						<div class="service__logo">
+							<img src="./images/svg/branding.svg" alt="Branding" />
+						</div>
+						<h3 class="service__title">Branding</h3>
+						<p class="service__text">
+							A brand today is all about how it makes your customers feel.
+						</p>
+						<a class="service__link" href="#!"
+							>Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow" />
+						</a>
+					</div>
+					<div class="service">
+						<div class="service__logo">
+							<img src="./images/svg/development.svg" alt="Development" />
+						</div>
+						<h3 class="service__title">Development</h3>
+						<p class="service__text">
+							A brand today is all about how it makes your customers feel.
+						</p>
+						<a class="service__link" href="#!"
+							>Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+					<div class="service">
+						<div class="service__logo">
+							<img src="./images/svg/animation.svg" alt="Animation" />
+						</div>
+						<h3 class="service__title">Animation</h3>
+						<p class="service__text">
+							A brand today is all about how it makes your customers feel.
+						</p>
+						<a class="service__link" href="#!"
+							>Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+					<div class="service">
+						<div class="service__logo">
+							<img
+								src="./images/svg/user-experience.svg"
+								alt="User Experience"
+							/>
+						</div>
+						<h3 class="service__title">User Experience</h3>
+						<p class="service__text">
+							A brand today is all about how it makes your customers feel.
+						</p>
+						<a class="service__link" href="#!"
+							>Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="projects">
+			<div class="container">
+				<div class="projects__top">
+					<h2 class="projects__title title">
+						Check out some great case studies
+					</h2>
+					<a href="#!" class="projects__button"
+						>Feature Project <img src="./images/svg/arrow-sm.svg" alt="arrow"
+					/></a>
+				</div>
+				<div class="projects__wrapper">
+					<div class="project">
+						<img
+							src="./images/project-1.webp"
+							alt="PS-Alms"
+							class="project__img"
+						/>
+						<div class="project__info">
+							<h3 class="project__title">PS-Alms</h3>
+							<p class="project__text">
+								Capturing workplace productivty in a series of candid
+								photoshoots.
+							</p>
+							<a href="#!" class="project__link"
+								>Learn More <img src="./images/svg/arrow.svg" alt="arrow"
+							/></a>
+						</div>
+					</div>
+					<div class="project">
+						<img
+							src="./images/project-2.webp"
+							alt="Almosty"
+							class="project__img"
+						/>
+						<div class="project__info">
+							<h3 class="project__title">Almosty</h3>
+							<p class="project__text">
+								Capturing workplace productivty in a series of candid
+								photoshoots.
+							</p>
+							<a href="#!" class="project__link"
+								>Learn More <img src="./images/svg/arrow.svg" alt="arrow"
+							/></a>
+						</div>
+					</div>
+					<div class="project">
+						<img
+							src="./images/project-3.webp"
+							alt="Skin Care"
+							class="project__img"
+						/>
+						<div class="project__info">
+							<h3 class="project__title">Skin Care</h3>
+							<p class="project__text">
+								Capturing workplace productivty in a series of candid
+								photoshoots.
+							</p>
+							<a href="#!" class="project__link"
+								>Learn More <img src="./images/svg/arrow.svg" alt="arrow"
+							/></a>
+						</div>
+					</div>
+					<div class="project">
+						<img
+							src="./images/project-4.webp"
+							alt="Neauthy Skin Care"
+							class="project__img"
+						/>
+						<div class="project__info">
+							<h3 class="project__title">Neauthy Skin Care</h3>
+							<p class="project__text">
+								Capturing workplace productivty in a series of candid
+								photoshoots.
+							</p>
+							<a href="#!" class="project__link"
+								>Learn More <img src="./images/svg/arrow.svg" alt="arrow"
+							/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="skills">
+			<div class="container">
+				<h2 class="skills__title title">We offer a wide variety of skills.</h2>
+				<div class="skills__wrapper">
+					<div class="skill">
+						<h3 class="skill__title">01 - Research</h3>
+						<p class="skill__text">
+							A brand today is all about how it makes customers feel.
+						</p>
+					</div>
+					<div class="skill">
+						<h3 class="skill__title">02 - Concept</h3>
+						<p class="skill__text">
+							A brand today is all about how it makes customers feel.
+						</p>
+					</div>
+					<div class="skill">
+						<h3 class="skill__title">03 - Development</h3>
+						<p class="skill__text">
+							A brand today is all about how it makes customers feel.
+						</p>
+					</div>
+					<div class="skill">
+						<h3 class="skill__title">04 - Growth</h3>
+						<p class="skill__text">
+							A brand today is all about how it makes customers feel.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="awards">
+			<div class="container">
+				<h1 class="awards__title title">Our Awards</h1>
+				<div class="awards__wrapper">
+					<div class="award">
+						<img src="./images/svg/award.svg" alt="award" class="award__logo" />
+						<div class="award__info">
+							<h4 class="award__data">CARTIER / 2021</h4>
+							<h3 class="award__title">Awwwards Site of the day</h3>
+						</div>
+						<a href="#!" class="award__link"
+							>View Project <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+					<div class="award">
+						<img src="./images/svg/award.svg" alt="award" class="award__logo" />
+						<div class="award__info">
+							<h4 class="award__data">CARTIER / 2021</h4>
+							<h3 class="award__title">Webflow Design of the Week</h3>
+						</div>
+						<a href="#!" class="award__link"
+							>View Project <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+					<div class="award">
+						<img src="./images/svg/award.svg" alt="award" class="award__logo" />
+						<div class="award__info">
+							<h4 class="award__data">CARTIER / 2021</h4>
+							<h3 class="award__title">Awwwards Site of the day</h3>
+						</div>
+						<a href="#!" class="award__link"
+							>View Project <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+					<div class="award">
+						<img src="./images/svg/award.svg" alt="award" class="award__logo" />
+						<div class="award__info">
+							<h4 class="award__data">CARTIER / 2021</h4>
+							<h3 class="award__title">Webflow Design of the Week</h3>
+						</div>
+						<a href="#!" class="award__link"
+							>View Project <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="reviews">
+			<div class="container">
+				<h2 class="reviews__title title">Quality is no accident.</h2>
+				<div class="reviews__slider swiper">
+					<div class="swiper-wrapper">
+						<div class="reviews__slide slide swiper-slide">
+							<img src="./images/slide.jpg" alt="men" class="slide__img" />
+							<div class="slide__review review">
+								<p class="review__text">
+									Amet minim mollit non deserunt est sit aliqua dolor do amet
+									sint officia consequat duis enim mollit exercitation.
+								</p>
+								<div class="review__person">Lee Morgan, Slack, Inc</div>
+								<div class="review__location">New York, NY Team</div>
+							</div>
+						</div>
+						<div class="reviews__slide slide swiper-slide">
+							<img src="./images/slide.jpg" alt="men" class="slide__img" />
+							<div class="slide__review review">
+								<p class="review__text">
+									Amet minim mollit non deserunt est sit aliqua dolor do amet
+									sint officia consequat duis enim mollit exercitation.
+								</p>
+								<div class="review__person">Lee Morgan, Slack, Inc</div>
+								<div class="review__location">New York, NY Team</div>
+							</div>
+						</div>
+						<div class="reviews__slide slide swiper-slide">
+							<img src="./images/slide.jpg" alt="men" class="slide__img" />
+							<div class="slide__review review">
+								<p class="review__text">
+									Amet minim mollit non deserunt est sit aliqua dolor do amet
+									sint officia consequat duis enim mollit exercitation.
+								</p>
+								<div class="review__person">Lee Morgan, Slack, Inc</div>
+								<div class="review__location">New York, NY Team</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__slider-buttons">
+						<div class="reviews__slider-button-prev">
+							<img src="./images/svg/triangle.svg" alt="arrow" />
+						</div>
+						<div class="reviews__slider-button-next">
+							<img src="./images/svg/triangle.svg" alt="arrow" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="company">
+			<div class="container">
+				<div class="company__wrapper">
+					<h2 class="company__title title">
+						Let's build something <span>great!</span>
+					</h2>
+					<div>
+						<p class="company__text">
+							Amet minim mollit non deserunt est sit aliqua dolor do amet sint
+							officia consequat duis enim mollit exercitation.
+						</p>
+						<a href="#!" class="company__button"
+							>Our Company <img src="./images/svg/arrow.svg" alt="arrow"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="blog">
+			<div class="container">
+				<div class="blog__top">
+					<h2 class="blog__title title">Blog & Articles</h2>
+					<a href="#!" class="blog__button"
+						>Latest Article <img src="./images/svg/arrow-sm.svg" alt="arrow"
+					/></a>
+				</div>
+				<div class="blog__articles">
+					<div class="article">
+						<img
+							src="./images/article-1.webp"
+							alt="Marketing"
+							class="article__img"
+						/>
+						<div class="article__type">Marketing</div>
+						<h2 class="article__title">
+							Why Figma works best for modern teams
+						</h2>
+						<a href="#!" class="article__link"
+							>Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+					<div class="article">
+						<img
+							src="./images/article-2.webp"
+							alt="Marketing"
+							class="article__img"
+						/>
+						<div class="article__type">Marketing</div>
+						<h2 class="article__title">
+							How to deliver clients a design system
+						</h2>
+						<a href="#!" class="article__link"
+							>Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+					<div class="article">
+						<img
+							src="./images/article-3.webp"
+							alt="Marketing"
+							class="article__img"
+						/>
+						<div class="article__type">Marketing</div>
+						<h2 class="article__title">
+							Curating a workplace that inspires all of us
+						</h2>
+						<a href="#!" class="article__link"
+							>Learn More <img src="./images/svg/arrow-sm.svg" alt="arrow"
+						/></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div class="footer__top">
+				<div class="container">
+                    <a class="footer__logo" href="/">
+                        <img src="./images/svg/logo.svg" alt="Willow" />
+                    </a>
+                    <nav class="footer__nav nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Company</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Services</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Service Detail</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#!" class="nav__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+			</div>
+			<div class="footer__bottom">
+                <div class="container">
+                    <p class="footer__copyright">
+                        © Template by <span>Flowbase</span> - Powered by <span>Webflow</span>
+                    </p>
+                    <nav class="footer__subnav subnav">
+                        <ul class="subnav__list">
+                            <li class="subnav__item">
+                                <a href="#!" class="subnav__link">Style Guide</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="#!" class="subnav__link">Licence</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="#!" class="subnav__link">Changelog</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
-        </div>
+		</div>
+
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="./js/script.js"></script>
 	</body>
 </html>
